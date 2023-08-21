@@ -723,7 +723,7 @@ footer {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 425px), (max-width: 404px) {
   /* pagina 1 */
   /* menu */
   .logo {
@@ -804,7 +804,7 @@ footer {
   .container-table {
     display: flex;
     margin: 11px;
-    padding: 42px;
+    padding: 25px;
   }
 
   /* pagina 4 */
