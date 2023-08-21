@@ -386,7 +386,7 @@ footer {
 .image-title {
   display: flex;
   margin: 50px;
-  max-width: 800px;
+  max-width: 85%;
   border-radius: 9px;
 }
 .text-box {
@@ -581,7 +581,18 @@ footer {
 
 /* responsividade */
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
+  /* pagina 2 */
+
+  .image-title {
+    display: flex;
+    margin: 50px;
+    max-width: 50%;
+    border-radius: 9px;
+  }
+}
+
+@media (max-width: 1024px) and (max-width: 1200px) {
   /* pagina 1 */
 
   /* tipos */
@@ -595,6 +606,12 @@ footer {
     flex-direction: column-reverse;
     align-items: center;
   }
+  .image-title {
+    display: flex;
+    margin: 50px;
+    max-width: 85%;
+    border-radius: 9px;
+  }
 
   /* pagina 3 */
 
@@ -605,7 +622,7 @@ footer {
   }
 }
 
-@media (max-width: 836px) {
+@media (max-width: 844px) and (max-width: 992px) {
   /* pagina 1 */
 
   .espace {
@@ -715,7 +732,7 @@ footer {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 425px), (max-width: 481px) {
   /* pagina 1 */
   .main-banner {
     background-position: -364px -293px;
@@ -793,5 +810,59 @@ footer {
   .container-location {
     margin: 20px;
     width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  /* pagina 1 */
+
+  .main-banner {
+    padding: 6rem 0;
+  }
+  .main-banner h1 {
+    font-size: 27px;
+  }
+  .main-banner p {
+    font-size: 15px;
+  }
+  .services-container p {
+    line-height: 20px;
+  }
+  .container-classes {
+    font-size: 15px;
+  }
+  .type-name {
+    font-size: 20px;
+  }
+  .types1 ul,
+  .types2 ul,
+  .types3 ul,
+  .types4 ul {
+    display: block;
+    justify-content: flex-start;
+    margin: 5px;
+  }
+  .container-visit h1 {
+    font-size: 25px;
+  }
+  .container-visit p {
+    font-size: 18px;
+  }
+
+  /* pagina 2 */
+
+  .text-box p {
+    font-size: 15px;
+  }
+
+  /* pagina 3 */
+
+  .container-table {
+    margin: 10px;
+  }
+  .table {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
   }
 }
