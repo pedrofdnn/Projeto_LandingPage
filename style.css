@@ -703,7 +703,7 @@ footer {
   .image-title {
     display: flex;
     margin: 50px;
-    max-width: 717px;
+    max-width: 85%;
     border-radius: 9px;
   }
 
@@ -753,7 +753,7 @@ footer {
   /* pagina 2 */
 
   .image-title {
-    max-width: 370px;
+    max-width: 85%;
   }
   .container-img {
     grid-template-columns: auto;
@@ -767,5 +767,31 @@ footer {
   /* pagina 4 */
   .container-contact-geral {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  /* pagina 1 */
+  .container-visit h1 {
+    font-size: 30px;
+  }
+  .container-visit p {
+    font-size: 22px;
+  }
+
+  /* pagina 2 */
+  .image-title {
+    max-width: 80%;
+  }
+
+  /* pagina 3 */
+  .container-infor {
+    margin: 15px;
+  }
+
+  /* pagina 4 */
+  .container-location {
+    margin: 20px;
+    width: 90%;
   }
 }
