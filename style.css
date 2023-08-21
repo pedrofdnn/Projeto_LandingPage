@@ -809,11 +809,11 @@ footer {
 
   /* pagina 4 */
   .container-contact {
-    padding: 8px 13px;
+    padding: 8px 3px;
   }
   .container-map {
-    max-width: 73%;
-    margin-left: 72px;
+    max-width: 68%;
+    margin-left: 85px;
   }
 }
 
