@@ -206,6 +206,7 @@ p {
 
 .services-container p {
   line-height: 24px;
+  text-align: justify;
 }
 /* ############################################# */
 
@@ -580,8 +581,10 @@ footer {
 
 /* responsividade */
 
-@media (max-width: 1024px), (max-width: 896px) {
+@media (max-width: 1024px) {
   /* pagina 1 */
+
+  /* tipos */
   .espace {
     padding-top: 18px;
   }
@@ -589,12 +592,8 @@ footer {
   /* pagina 2 */
   .container-about {
     display: flex;
-    align-items: center;
     flex-direction: column-reverse;
-  }
-
-  .image-title {
-    max-width: 850px;
+    align-items: center;
   }
 
   /* pagina 3 */
@@ -602,41 +601,27 @@ footer {
   .table {
     display: flex;
     flex-direction: column;
-    margin: 0px 41px 25px;
-  }
-  .container-infor {
-    margin: 10px;
-    text-align: justify;
-  }
-
-  /* pagina4 */
-
-  .container-contact-geral {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
-  }
-
-  .container-contact {
-    display: flex;
-    margin: 15px;
-    background-color: #63636346;
-    border-radius: 9px;
-    padding: 15px 88px;
+    margin: 10px 65px;
   }
 }
 
-@media (max-width: 768px),
-  (max-width: 844px),
-  (max-width: 836px),
-  (max-width: 667px) {
+@media (max-width: 836px) {
+  /* pagina 1 */
+
+  .espace {
+    padding-top: 36px;
+  }
+}
+
+@media (max-width: 768px) {
   /* pagina 1 */
 
   /* menu */
   .logo {
     width: 80px;
-    margin: 8px 0 0 362px;
+    margin: 8px auto;
   }
+
   .menu-button-container {
     display: flex;
   }
@@ -721,162 +706,66 @@ footer {
     max-width: 717px;
     border-radius: 9px;
   }
-}
-
-@media (max-width: 425px), (max-width: 404px) {
-  /* pagina 1 */
-  /* menu */
-  .logo {
-    margin: 8px 0 0 147px;
-  }
-
-  /* banner */
-  .main-banner h1 {
-    font-size: 35px;
-  }
-  .main-banner p {
-    font-size: 20px;
-    margin: 10px;
-  }
-  .main-banner {
-    background-image: url("./img/home.jpg");
-    background-size: cover;
-    font-weight: bold;
-    padding: 6rem 0;
-    position: relative;
-    background-position: -349px -226px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-
-  /* serviços */
-
-  .services-container {
-    display: flex;
-    padding: 1rem 0;
-    flex-direction: column;
-  }
-  .services-container ul {
-    display: flex;
-    width: 85%;
-    margin: 0 auto;
-  }
-  .services-container p {
-    line-height: 24px;
-    text-align: justify;
-  }
-
-  .container-classes {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-  }
-  .espace {
-    padding-top: 0;
-  }
-  .types1 ul,
-  .types2 ul,
-  .types3 ul,
-  .types4 ul {
-    margin: 3px;
-  }
-
-  /* footer */
-  .container-visit h1 {
-    font-size: 30px;
-    color: white;
-  }
-  .container-visit p {
-    margin-bottom: 25px;
-    font-size: 22px;
-  }
-
-  /* pagina 2 */
-
-  .image-title {
-    max-width: 375px;
-  }
-  .container-img {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  /* pagina 3 */
-  .container-table {
-    display: flex;
-    margin: 11px;
-    padding: 25px;
-  }
-
-  /* pagina 4 */
-  .container-contact {
-    padding: 8px 3px;
-  }
-  .container-map {
-    max-width: 68%;
-    margin-left: 85px;
-  }
-}
-
-@media (max-width: 375px), (max-width: 390px) {
-  /* pagina1 */
-  .logo {
-    margin: 8px 0 0 128px;
-  }
-  /* pagina 2 */
-  .image-title {
-    max-width: 340px;
-  }
 
   /* pagina 3 */
   .table {
     display: flex;
     flex-direction: column;
-    margin: 0px 15px 26px;
-  }
-
-  .container-infor h2 {
-    text-align: center;
-  }
-
-  /* pagina 4 */
-  .container-map {
-    max-width: 64%;
-    margin-left: 97px;
+    margin: 10px 45px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   /* pagina 1 */
-  .logo {
-    margin: 8px 0 0 100px;
+  .main-banner {
+    background-position: -364px -293px;
   }
   .main-banner h1 {
-    font-size: 30px;
+    font-size: 35px;
   }
   .main-banner p {
-    font-size: 15px;
-  }
-  .container-visit h1 {
-    font-size: 25px;
-  }
-  .container-visit p {
-    margin-bottom: 25px;
     font-size: 18px;
   }
-  /* pagina 2 */
-  .image-title {
-    max-width: 280px;
+  .services-container {
+    display: flex;
+    padding: 2rem 0;
+    flex-direction: column;
   }
+  .services-container ul {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .container-classes {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .espace {
+    padding-top: 0px;
+  }
+  .container-visit h1 {
+    font-size: 35px;
+  }
+
+  /* pagina 2 */
+
+  .image-title {
+    max-width: 370px;
+  }
+  .container-img {
+    grid-template-columns: auto;
+  }
+
   /* pagina 3 */
   .container-table {
-    display: flex;
-    margin: 20px;
-    padding: 17px;
+    padding: 10px;
   }
 
   /* pagina 4 */
-  .container-map {
-    max-width: 53%;
-    margin-left: 128px;
+  .container-contact-geral {
+    flex-direction: column;
   }
 }
