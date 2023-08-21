@@ -804,6 +804,7 @@ footer {
   .container-table {
     display: flex;
     margin: 11px;
+    padding: 42px;
   }
 
   /* pagina 4 */
